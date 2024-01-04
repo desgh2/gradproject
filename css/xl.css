@@ -1,0 +1,44 @@
+@media (min-width: 1200px) and (max-width:1399px) {
+    /**
+     * projects
+     */
+    .projects-box {
+        margin-bottom: 60px;
+        position: relative;
+    }
+    .projects-box-image {
+        height: 450px;
+        overflow: hidden;
+    }
+    .projects-box img {
+        width: 100%;
+        transition: all 0.4s;
+    }
+    .projects-box:hover img {
+        transform: scale(1.05)
+    }
+    .projects-box-status {
+        position: absolute;
+        left: 0px;
+        top: 15px;
+        background-color: #F8C011;
+        padding: 7px 25px;
+        color: #16232B;
+    }
+    .projects-box a {
+        display: block;
+        text-align: center;
+        margin: 15px 0;
+        font-weight: 600;
+        font-size: 20px;
+        color: #16232B;
+    }
+    .projects-box a:focus,
+    .projects-box a:hover {
+        color: #F8C011;
+    }
+    .projects-box p {
+        color: #555555;
+        text-align: center;
+    }
+}

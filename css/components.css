@@ -1,0 +1,124 @@
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: #FFFFFF;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 0 0 !important;
+}
+
+input.input-field {
+    border: 1px solid #DCDCDD;
+    height: 48px;
+    padding: 5px 20px;
+    color: #000000;
+    border-radius: 0 !important;
+}
+
+textarea.text-field {
+    border: 1px solid #DCDCDD;
+    min-height: 150px !important;
+    max-height: 300px;
+    padding: 5px 20px;
+    color: #000000;
+    border-radius: 0 !important;
+}
+
+input.input-field:focus,
+textarea.text-field:focus {
+    border: 1px solid #F8C011;
+}
+
+.btn-primary {
+    background-color: #F8C011;
+    color: #FFFFFF;
+    border-color: #F8C011;
+    border-radius: 0 !important;
+}
+
+.btn-default,
+.btn-search {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    color: #777777;
+    font-size: 22px;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-search:hover,
+.btn-search:focus {
+    color: #16232B;
+}
+
+.btn-feedback {
+    text-transform: uppercase;
+    padding: 10px 25px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.input-file-upload {
+    display: inline-block;
+    position: absolute;
+    width: 0;
+}
+
+label.btn-file-upload {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #525055;
+    cursor: pointer;
+}
+
+label.btn-file-upload i {
+    font-size: 24px;
+    color: rgba(248, 192, 17, 1);
+}
+
+
+/**
+ * pagination
+ */
+
+.pagination li {
+    margin-right: 15px;
+}
+
+.page-item:first-child .page-link {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.page-link.active,
+.active>.page-link {
+    z-index: 3;
+    color: #F8C011;
+    background-color: #16232B;
+    border-color: #16232B;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #16232B;
+    text-decoration: none;
+    background-color: #F8C011;
+    border: 1px solid #F8C011;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: #F8C011;
+    background-color: #16232B;
+    border-color: #16232B;
+}

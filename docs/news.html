@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новини</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/xs.css">
+    <link rel="stylesheet" href="../css/sm.css">
+    <link rel="stylesheet" href="../css/md.css">
+    <link rel="stylesheet" href="../css/lg.css">
+    <link rel="stylesheet" href="../css/xl.css">
 </head>
 
 <body>
@@ -15,42 +21,62 @@
         <header>
             <div class="container top-header">
                 <div class="row">
-                    <div class="col-lg-6 logotype">
+                    <div class="col-12 col-lg-6 logotype">
                         <img src="../images/logotype.svg" alt="">
                     </div>
-                    <div class="col-lg-6 my-auto">
+                    <div class="about-menu col-12 col-lg-6 my-auto">
                         <div class="about-menu d-flex justify-content-around">
                             <a href="#">
-                                <i class="bi bi-telephone-fill"></i> Контакти
+                                <i class="bi bi-telephone-fill"></i> <span>Контакти</span>
                             </a>
                             <a href="#">
-                                <i class="bi bi-telephone-forward-fill"></i> Зворотній зв’язок
+                                <i class="bi bi-telephone-forward-fill"></i> <span>Зворотній зв’язок</span>
                             </a>
-                            <a href="#">
-                                <i class="bi bi-search"></i> Пошук
+                            <a data-bs-toggle="collapse" href="#collapseSearch" role="button" aria-expanded="false" aria-controls="collapseSearch">
+                                <i class="bi bi-search"></i> <span>Пошук</span>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <nav class="primary-menu" id="primary-menu">
+            <nav d="primary-menu" class="primary-menu navbar navbar-expand-lg">
                 <div class="container">
-                    <div class="d-flex justify-content-between">
-                        <a class="nav-link active" href="#">ПРО КП “ГРАДПРОЕКТ”</a>
-                        <a class="nav-link" href="#">ПРОЄКТИ</a>
-                        <a class="nav-link" href="#">РЕКЛАМА</a>
-                        <a class="nav-link" href="#">ЗЕМЛЕУСТРІЙ</a>
-                        <a class="nav-link" href="#">ГЕОДЕЗІЯ</a>
+                    <button class="mobile-toggler-menu navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false"><i class="bi bi-list"></i></button>
+                    <div class="collapse navbar-collapse" id="mobileMenu">
+                        <div><a class="nav-link" href="#">ПРО КП “ГРАДПРОЕКТ”</a></div>
+                        <div><a class="nav-link" href="#">ПРОЄКТИ</a></div>
+                        <div><a class="nav-link" href="#">РЕКЛАМА</a></div>
+                        <div><a class="nav-link" href="#">ЗЕМЛЕУСТРІЙ</a></div>
+                        <div><a class="nav-link" href="#">ГЕОДЕЗІЯ</a></div>
                     </div>
                 </div>
             </nav>
-        </header>
-        <main>
-            <div class="breadcrumbs">
+            <div class="collapse bg-body-secondary" id="collapseSearch">
                 <div class="container">
                     <div class="row">
-                        <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
+                        <form action="" class="d-flex col-12 py-3">
+                            <div class="w-100 me-3">
+                                <input type="text" class="form-control input-field" placeholder="Що шукаємо?">
+                            </div>
+                            <div class="my-auto">
+                                <button class="btn-search" type="button"><i class="bi bi-search"></i></button>
+                            </div>
+                            <div class="my-auto ms-3">
+                                <a class="btn-default" data-bs-toggle="collapse" href="#collapseSearch" role="button" aria-expanded="false" aria-controls="collapseSearch">
+                                    <i class="bi bi-x-lg"></i>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="breadcrumbs py-2">
+                <div class="container">
+                    <div class="row">
+                        <nav style="--bs-breadcrumb-divider: '|';" aria-label="breadcrumb" class="my-auto">
+                            <ol class="breadcrumb my-auto">
                                 <li class="breadcrumb-item"><a href="#">Головна</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Новини</li>
                             </ol>
@@ -59,9 +85,10 @@
                 </div>
             </div>
             <div class="container">
-                <h1 class="news-title">Новини</h1>
+                <!-- <h1 class="news-title">Новини</h1> -->
+                <h1 class="page-title">Новини</h1>
                 <div class="row">
-                    <div class="new-card-box col-lg-4">
+                    <div class="new-card-box col-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="new-card">
                             <div class="new-card-image">
                                 <div class="new-card-time">12 серпня 2023 09:30</div>
@@ -74,7 +101,7 @@
                         </div>
                     </div>
                     <!-- odd -->
-                    <div class="new-card-box col-lg-4">
+                    <div class="new-card-box col-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="new-card-odd">
                             <div class="new-card-image">
                                 <div class="new-card-time">12 серпня 2023 09:30</div>
@@ -87,7 +114,7 @@
                         </div>
                     </div>
                     <!-- /odd -->
-                    <div class="new-card-box col-lg-4">
+                    <div class="new-card-box col-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="new-card">
                             <div class="new-card-image">
                                 <div class="new-card-time">12 серпня 2023 09:30</div>
@@ -100,7 +127,7 @@
                         </div>
                     </div>
                     <!-- line1 -->
-                    <div class="new-card-box col-lg-4">
+                    <div class="new-card-box col-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="new-card-odd">
                             <div class="new-card-image">
                                 <div class="new-card-time">12 серпня 2023 09:30</div>
@@ -112,7 +139,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="new-card-box col-lg-4">
+                    <div class="new-card-box col-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="new-card">
                             <div class="new-card-image">
                                 <div class="new-card-time">12 серпня 2023 09:30</div>
@@ -124,7 +151,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="new-card-box col-lg-4">
+                    <div class="new-card-box col-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="new-card-odd">
                             <div class="new-card-image">
                                 <div class="new-card-time">12 серпня 2023 09:30</div>
@@ -137,7 +164,7 @@
                         </div>
                     </div>
                     <!-- line2 -->
-                    <div class="new-card-box col-lg-4">
+                    <div class="new-card-box col-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="new-card">
                             <div class="new-card-image">
                                 <div class="new-card-time">12 серпня 2023 09:30</div>
@@ -150,7 +177,7 @@
                         </div>
                     </div>
                     <!-- odd -->
-                    <div class="new-card-box col-lg-4">
+                    <div class="new-card-box col-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="new-card-odd">
                             <div class="new-card-image">
                                 <div class="new-card-time">12 серпня 2023 09:30</div>
@@ -163,7 +190,7 @@
                         </div>
                     </div>
                     <!-- /odd -->
-                    <div class="new-card-box col-lg-4">
+                    <div class="new-card-box col-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="new-card">
                             <div class="new-card-image">
                                 <div class="new-card-time">12 серпня 2023 09:30</div>
@@ -185,22 +212,24 @@
         <footer class="footer" id="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 footer-logotype">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3 footer-logotype">
                         <img src="../images/footer-logotype.svg" alt="">
                         <div class="footer-about-list">
-                            <div class="footer-about-list-item">
-                                <i class="bi bi-geo-alt-fill me-2 mt-1" style="width: 50px;"></i>
-                                <span>вул.Зелінського, 3, м.Запоріжжя, 69126</span>
+                            <div class="d-flex mb-3">
+                                <div class="text-white">
+                                    <i class="bi bi-geo-alt-fill" style="width: 50px;"></i>
+                                </div>
+                                <div class="ms-2 text-white">вул.Зелінського, 3, <br>м.Запоріжжя, 69126</div>
                             </div>
-                            <div class="footer-about-list-item">
-                                <i class="bi bi-clock"></i>
-                                <span>ПН-ПТ: 8:00-17:00</span>
+                            <div class="d-flex">
+                                <div class="text-white"><i class="bi bi-clock" style="width: 50px;"></i></div>
+                                <div class="ms-2 text-white">ПН-ПТ: 8:00-17:00</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-9">
+                    <div class="col-12 col-md-12 col-lg-9">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-12  col-md-6 col-lg-6">
                                 <div class="footer-menu">
                                     <div class="footer-menu-title">Про КП “Градпроект”</div>
                                     <ul class="footer-menu-list">
@@ -209,7 +238,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-12 col-md-6 col-lg-6">
                                 <div class="footer-menu">
                                     <div class="footer-menu-title">Реклама</div>
                                     <ul class="footer-menu-list">
@@ -219,7 +248,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-12 col-md-6 col-lg-6">
                                 <div class="footer-menu">
                                     <div class="footer-menu-title">Проєктування та забудова</div>
                                     <ul class="footer-menu-list">
@@ -231,7 +260,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-12 col-md-6 col-lg-6">
                                 <div class="footer-menu">
                                     <div class="footer-menu-title">Додатково</div>
                                     <ul class="footer-menu-list">
@@ -246,8 +275,29 @@
                 </div>
             </div>
         </footer>
+        <a href="#" id="scrolltop">
+            <i class="bi bi-chevron-up"></i>
+        </a>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <!-- <script>
+        $("#scrolltop").click(function() {
+            $("html, body").animate({
+                scrollTop: 0
+            });
+            return false;
+        });
+
+        $(window).bind('scroll', function() {
+            if ($(this).scrollTop() > 200) { // show after 200 px of user scrolling
+                $("#scrolltop").show();
+            } else {
+                $("#scrolltop").hide(); // hide on page load
+            }
+        });
+    </script> -->
 </body>
 
 </html>

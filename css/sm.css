@@ -1,0 +1,165 @@
+@media (min-width: 576px) and (max-width:767px) {
+    .about-menu span {
+        display: none;
+    }
+    .logotype {
+        background-color: #16232B;
+    }
+    .logotype img {
+        display: block;
+        padding: 10px;
+        width: 100%;
+    }
+    .primary-menu a {
+        text-align: center;
+        display: block;
+    }
+    .about-menu {
+        margin: 25px 0;
+    }
+    .about-menu a span {
+        display: none;
+    }
+    .about-menu a {
+        font-size: 20px;
+        border-bottom: transparent;
+    }
+    .navbar-toggler {
+        margin: 10px 0;
+    }
+    button.mobile-toggler-menu {
+        font-size: 32px;
+        color: #16232B;
+        border: 1px solid #16232B;
+    }
+    /**
+         * 404
+         */
+    .error-not-found {
+        margin: 30px 0 50px;
+    }
+    .error-code {
+        color: #DCDCDD;
+        font-size: 128px;
+        font-family: "Ukraine Bold";
+        margin-bottom: 0px;
+    }
+    .error-title {
+        color: #343436;
+        font-size: 32px;
+        font-family: "Ukraine Ultra";
+        margin-bottom: 25px;
+    }
+    .error-text {
+        color: #16232B;
+        font-size: 16px;
+        font-family: "Ukraine Ultra";
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    /**
+         * footer
+         */
+    .footer {
+        background-color: #16232B;
+        padding: 50px 0;
+        margin-top: 50px;
+    }
+    .footer-logotype {
+        text-align: center;
+    }
+    .footer-logotype img {
+        width: 50%;
+        margin: 0 25%;
+    }
+    .footer-about-list {
+        display: table;
+        margin: 30px auto;
+    }
+    .footer-menu {
+        margin-bottom: 40px;
+    }
+    .footer-menu-title {
+        background-color: #F8C011;
+        color: #16232B;
+        font-size: 20px;
+        padding: 3px 10px;
+        margin-bottom: 10px;
+        font-family: "Ukraine Ultra";
+    }
+    /**
+         * breadcrumbs
+         */
+    .breadcrumbs {
+        display: none;
+    }
+    /**
+         * project
+         */
+    .project-box {
+        position: relative;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .project-box-title {
+        position: relative;
+        padding: 10px 20px;
+    }
+    .project-box-title h1 {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+    .project-box-title p {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    /**
+         * department pages
+         */
+    .department-person-box-post {
+        position: static;
+        margin-bottom: 25px;
+    }
+    .department-text h2 {
+        color: #16232B;
+        font-family: "Ukraine Bold";
+        font-size: 24px;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+    /**
+         * feedback
+         */
+    .ff-uploads {
+        margin-bottom: 45px;
+    }
+    /**
+         * category
+         */
+    .category-sidebar {
+        margin: 40px 0 25px;
+    }
+    /**
+         * persons
+         */
+    .persons-sidebar {
+        margin: 40px 0 25px;
+    }
+    .persons-box a {
+        text-align: center;
+    }
+    .persons-post {
+        text-align: center;
+    }
+    .persons-phone {
+        text-align: center;
+    }
+    /**
+    * projects
+    */
+    .projects-box-image {
+        height: 320px;
+        overflow: hidden;
+    }
+}

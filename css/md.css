@@ -1,0 +1,228 @@
+@media (min-width: 768px) and (max-width:991px) {
+    .about-menu span {
+        display: none;
+    }
+    .logotype {
+        background-color: #16232B;
+    }
+    .logotype img {
+        display: block;
+        padding: 20px 0;
+        width: 60%;
+        margin: 0 20%;
+    }
+    .primary-menu a {
+        text-align: center;
+        display: block;
+    }
+    .about-menu {
+        margin: 25px 0;
+    }
+    .about-menu a span {
+        display: none;
+    }
+    .about-menu a {
+        font-size: 20px;
+        border-bottom: transparent;
+    }
+    .navbar-toggler {
+        margin: 10px 0;
+    }
+    button.mobile-toggler-menu {
+        font-size: 32px;
+        color: #16232B;
+        border: 1px solid #16232B;
+    }
+    /**
+         * 404
+         */
+    .error-not-found {
+        margin: 50px 0 80px;
+    }
+    .error-code {
+        color: #DCDCDD;
+        font-size: 128px;
+        font-family: "Ukraine Bold";
+        margin-bottom: 0px;
+    }
+    .error-title {
+        color: #343436;
+        font-size: 32px;
+        font-family: "Ukraine Ultra";
+        margin-bottom: 25px;
+    }
+    .error-text {
+        color: #16232B;
+        font-size: 16px;
+        font-family: "Ukraine Ultra";
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    /**
+         * footer
+         */
+    .footer {
+        background-color: #16232B;
+        padding: 50px 0;
+        margin-top: 50px;
+    }
+    .footer-logotype {
+        text-align: center;
+    }
+    .footer-about-list {
+        display: table;
+        margin: 30px auto;
+    }
+    .footer-menu {
+        margin-bottom: 40px;
+    }
+    .footer-menu-title {
+        background-color: #F8C011;
+        color: #16232B;
+        font-size: 20px;
+        padding: 3px 10px;
+        margin-bottom: 10px;
+        font-family: "Ukraine Ultra";
+    }
+    /**
+     * department pages
+     */
+    .department-person-box-post {
+        position: static;
+        margin-bottom: 25px;
+    }
+    /**
+         * feedback
+         */
+    .ff-uploads {
+        margin-bottom: 45px;
+    }
+    /**
+     * persons
+     */
+    .persons-sidebar {}
+    .persons-nav li a {
+        display: block;
+        background: #FFF;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.20);
+        color: #16232B;
+        font-family: "Gothic";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 122%;
+        margin-bottom: 15px;
+        padding: 22px 45px;
+        text-align: center;
+    }
+    .persons-nav li a:hover,
+    .persons-nav li a:focus {
+        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.20);
+    }
+    /* .active-bg {
+        position: absolute;
+        height: 100%;
+        width: 600px;
+        left: -600px;
+        top: 0;
+        background-color: rgba(248, 192, 17, 0.3);
+    } */
+    .persons-nav li a.active {
+        color: #F8C011;
+        font-weight: 600;
+    }
+    .persons-title {
+        color: #16232B;
+        font-size: 28px;
+        font-weight: 700;
+        font-family: "Gothic";
+        position: absolute;
+        background-color: #F8C011;
+        right: 0;
+        top: 15px;
+        padding: 13px 20px;
+    }
+    .persons-text-about p {
+        margin-bottom: 15px;
+    }
+    .persons-image-about img {
+        width: auto;
+        max-height: 360px;
+    }
+    .persons-text-about a {
+        color: #F8C011;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+    .persons-text-about {
+        margin-top: 50px;
+    }
+    .persons-box {
+        margin-bottom: 50px;
+    }
+    .persons-box img {
+        padding: 3px;
+        border: 1px solid #dddddd;
+        margin-bottom: 15px;
+        width: 230px;
+    }
+    .persons-box a {
+        font-weight: 600;
+        color: #16232B;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    .persons-post {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #777777;
+    }
+    .persons-phone i {
+        font-size: 20px;
+    }
+    .persons-box:hover img {
+        border: 1px solid #F8C011;
+    }
+    /**
+         * projects
+         */
+    .projects-box {
+        margin-bottom: 60px;
+        position: relative;
+    }
+    .projects-box-image {
+        height: 240px;
+        overflow: hidden;
+    }
+    .projects-box img {
+        width: 100%;
+        transition: all 0.4s;
+    }
+    .projects-box:hover img {
+        transform: scale(1.05)
+    }
+    .projects-box-status {
+        position: absolute;
+        left: 0px;
+        top: 15px;
+        background-color: #F8C011;
+        padding: 7px 25px;
+        color: #16232B;
+    }
+    .projects-box a {
+        display: block;
+        text-align: center;
+        margin: 15px 0;
+        font-weight: 600;
+        font-size: 20px;
+        color: #16232B;
+    }
+    .projects-box a:focus,
+    .projects-box a:hover {
+        color: #F8C011;
+    }
+    .projects-box p {
+        color: #555555;
+        text-align: center;
+    }
+}

@@ -1,4 +1,16 @@
 @font-face {
+    font-family: "Century Gothic";
+    src: url("../font/Century_Gothic.ttf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gothic';
+    src: url("../font/GOTHIC.TTF") format("truetype");
+}
+
+@font-face {
     font-family: "Ukraine Thin";
     src: url("../font/e-Ukraine-Thin.otf") format("opentype");
     font-style: normal;
@@ -59,7 +71,11 @@ html {
 
 body {
     background-color: #FFFFFF;
-    font-family: 'Ukraine';
+    font-family: 'Gothic';
+}
+
+#wrapper {
+    overflow: hidden !important;
 }
 
 .logotype {
@@ -80,9 +96,20 @@ body {
     border-bottom: 1px solid #000000;
 }
 
+.navbar {
+    padding: 0;
+}
+
 .primary-menu {
     background-color: #F8C011;
 }
+
+
+/* .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: space-between;
+} */
 
 .primary-menu a {
     color: #16232B;
@@ -90,7 +117,15 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 126%;
-    padding: 15px 0;
+    padding: 15px 25px;
+}
+
+.primary-menu a:hover {
+    background-color: #FFFFFF;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: space-between;
 }
 
 .page-title {
@@ -104,12 +139,38 @@ body {
 
 
 /**
+ * scrolltop
+ */
+
+a#scrolltop {
+    position: fixed;
+    font-size: 18px;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+    color: #16232B;
+    padding: 5px 10px;
+    font-size: 22px;
+    /* background-color: #F8C011; */
+    background-color: rgba(248, 192, 17, 0.5);
+    font-weight: 700;
+}
+
+a#scrolltop:hover,
+a#scrolltop:focus {
+    color: #000000;
+    background-color: rgba(248, 192, 17, 1);
+}
+
+
+/**
  * breadcrumbs
  */
 
 .breadcrumbs {
     background-color: #F6F6F6;
     font-size: 12px;
+    margin-bottom: 50px;
 }
 
 .breadcrumb-item a,
@@ -208,6 +269,11 @@ body {
     font-family: "Ukraine Thin";
     color: #FFF;
     font-size: 16px;
+}
+
+.footer-menu-list li a:hover,
+.footer-menu-list li a:focus {
+    color: #F8C011;
 }
 
 
@@ -446,7 +512,7 @@ button.btn-more-news {
 .contact-box {
     background-color: #F8C011;
     padding: 40px;
-    margin-bottom: 65px;
+    margin-bottom: 0px;
 }
 
 .contact-block {
@@ -466,7 +532,7 @@ button.btn-more-news {
     position: absolute;
     width: 70%;
     height: 2px;
-    left: 0;
+    left: -40px;
     bottom: -6px;
     background-color: #FFFFFF;
 }
@@ -488,6 +554,20 @@ button.btn-more-news {
     font-size: 30px;
     margin: 30px 0;
     border-bottom: 2px solid #16232B;
+}
+
+.department-title,
+.department-second-title {
+    color: #16232B;
+    font-family: "Ukraine Ultra";
+    font-size: 30px;
+    margin: 30px 0;
+    border-bottom: 2px solid #16232B;
+    padding-bottom: 3px;
+}
+
+.department-second-title {
+    font-size: 28px;
 }
 
 .department-person-box-image {
@@ -526,7 +606,7 @@ button.btn-more-news {
     top: 0;
     left: -500px;
     width: 500px;
-    height: 57px;
+    height: 100%;
     background-color: rgba(248, 192, 17, 0.50);
 }
 
@@ -545,4 +625,374 @@ button.btn-more-news {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 25px;
+}
+
+
+/**
+ * department-card-project
+ */
+
+.department-card-project {
+    margin-bottom: 40px;
+}
+
+.department-card-project-image {
+    overflow: hidden;
+}
+
+.department-card-project-image {
+    min-height: 310px;
+    height: 310px;
+}
+
+.department-card-project-title {
+    font-family: 'Gothic';
+    background-color: rgba(22, 35, 43, 0.70);
+    color: #FFF;
+    font-size: 16px;
+    padding: 10px 13px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.department-card-project-text {
+    font-family: 'Gothic';
+    background-color: rgba(22, 35, 43, 0.70);
+    color: #FFF;
+    padding-bottom: 15px;
+}
+
+.department-card-project-text p {
+    font-size: 13px;
+    padding: 5px 13px;
+    margin-bottom: 10px;
+}
+
+.department-card-project a {
+    background-color: #16232B;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 5px 15px;
+}
+
+
+/**
+ * PROJECTS
+ */
+
+
+/**
+  * PORJECT
+  */
+
+.project-box {
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.project-box img {
+    width: 100%;
+    height: auto;
+}
+
+.project-box-title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(248, 192, 17, 0.70);
+    padding: 10px 20px;
+}
+
+.project-box-title h1 {
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126%;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.project-box-title p {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126%;
+}
+
+.project-box-text h1,
+.project-box-text h2,
+.project-box-text h3,
+.project-box-text h4,
+.project-box-text h5,
+.project-box-text h6 {
+    color: #16232B;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 126%;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.project-box-text a {
+    color: #F8C011;
+    text-decoration: underline;
+}
+
+.project-box-text p {
+    margin-bottom: 20px;
+    color: #16232B;
+    text-align: justify;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+
+/**
+ * search
+ */
+
+.searching-box {
+    margin-bottom: 35px;
+}
+
+.searching-box a.searching-box-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #16232B;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.searching-box a.searching-box-name:hover,
+.searching-box a.searching-box-name:focus {
+    color: #F8C011;
+}
+
+.searching-box p {
+    font-style: italic;
+}
+
+
+/**
+ * category
+ */
+
+.category-sidebar {}
+
+.category-nav li a {
+    display: block;
+    background: #FFF;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.20);
+    color: #16232B;
+    font-family: "Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 122%;
+    margin-bottom: 15px;
+    padding: 15px 45px;
+}
+
+.category-nav li a:hover,
+.category-nav li a:focus {
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.20);
+}
+
+
+/* .active-bg {
+    position: absolute;
+    height: 100%;
+    width: 600px;
+    left: -600px;
+    top: 0;
+    background-color: rgba(248, 192, 17, 0.3);
+} */
+
+.category-nav li a.active {
+    color: #F8C011;
+    font-weight: 600;
+}
+
+.category-title {
+    color: #16232B;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: "Gothic";
+}
+
+.category-main p {
+    margin-bottom: 15px;
+}
+
+.category-main a {
+    color: #F8C011;
+}
+
+.category-main img {
+    margin: 20px auto;
+    width: auto;
+    display: block;
+}
+
+
+/**
+ * persons
+ */
+
+.persons-sidebar {}
+
+.persons-nav li a {
+    display: block;
+    background: #FFF;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.20);
+    color: #16232B;
+    font-family: "Gothic";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 122%;
+    margin-bottom: 15px;
+    padding: 22px 45px;
+    text-align: center;
+}
+
+.persons-nav li a:hover,
+.persons-nav li a:focus {
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.20);
+}
+
+
+/* .active-bg {
+    position: absolute;
+    height: 100%;
+    width: 600px;
+    left: -600px;
+    top: 0;
+    background-color: rgba(248, 192, 17, 0.3);
+} */
+
+.persons-nav li a.active {
+    color: #F8C011;
+    font-weight: 600;
+}
+
+.persons-title {
+    color: #16232B;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Gothic";
+    position: absolute;
+    background-color: #F8C011;
+    right: 0;
+    top: 15px;
+    padding: 13px 20px;
+}
+
+.persons-text-about p {
+    margin-bottom: 15px;
+}
+
+.persons-image-about img {
+    width: 100%;
+}
+
+.persons-text-about a {
+    color: #F8C011;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.persons-text-about {
+    margin-top: 90px;
+}
+
+.persons-box {
+    margin-bottom: 50px;
+}
+
+.persons-box img {
+    padding: 3px;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px;
+    width: 230px;
+}
+
+.persons-box a {
+    font-weight: 600;
+    color: #16232B;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.persons-post {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #777777;
+}
+
+.persons-phone i {
+    font-size: 20px;
+}
+
+.persons-box:hover img {
+    border: 1px solid #F8C011;
+}
+
+
+/**
+ * projects
+ */
+
+.projects-box {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.projects-box-image {
+    height: 450px;
+    overflow: hidden;
+}
+
+.projects-box img {
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.projects-box:hover img {
+    transform: scale(1.05)
+}
+
+.projects-box-status {
+    position: absolute;
+    left: 0px;
+    top: 15px;
+    background-color: #F8C011;
+    padding: 7px 25px;
+    color: #16232B;
+}
+
+.projects-box a {
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #16232B;
+}
+
+.projects-box a:focus,
+.projects-box a:hover {
+    color: #F8C011;
+}
+
+.projects-box p {
+    color: #555555;
+    text-align: center;
 }
